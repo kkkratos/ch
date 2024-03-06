@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="khalil">
+    <meta name="description" content="this is a certification survey-form website">
+    <meta http-equiv="refresh" content="30">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">  
+    <header class="header">
+        <h1 id="title"><strong>CERTIFICATION SURVEY FORM</strong></h1>
+        <p id="description">"Participate in our Customer Satisfaction Survey to help us improve our products/services.
+            Your feedback is vital in shaping our future decisions and enhancing your experience."</p>
+    </header>
+
+    <form action="" id="survey-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name here" required>
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="email">E-MAIL</label>
+            <input type="email" name="email" id="email" class="formControl" placeholder="Enter your email here" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number here" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="address">Your address (optional)</label>
+            <input type="text" name="address" id="adress" class="formControl" placeholder="Enter your name here" required>
+        </div>
+
+        <div class="form-group">
+            <p id="quest">Choose the description that best fits your current job role</p>
+            <select name="role" id="dropdown" class="formControl" required>
+
+                <option value="" disabled selected>
+                    select the curent role
+                </option>
+                <option value="student">Student</option>
+                <option value="job">Fulltime Job</option>
+                <option value="teacher">Teacher</option>
+                <option value="coach">Coach</option>
+                <option value="other">other</option>
+                
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p id="quest">
+                how you come to know about my website
+            </p>
+            <label for="">
+                <input type="radio" 
+                        name="source" 
+                        value="friends" 
+                        class="inputRadio"> friends
+            </label>
+            <label for="">
+                <input type="radio" 
+                        name="source" 
+                        value="tv-ads" 
+                        class="inputRadio"> TVAds
+            </label>
+            <label for="">
+                <input type="radio" 
+                        name="source" 
+                        value="social-media" 
+                        class="inputRadio"> Social Media
+            </label>
+            <label for="">
+                <input type="radio" 
+                        name="source" 
+                        value="newspappers" 
+                        class="inputRadio"> Newspappers
+            </label>
+            <label for="">
+                <input type="radio" 
+                        name="source" 
+                        value="other" 
+                        class="inputRadio"> other
+            </label>
+        </div>
+        <div class="form-group">
+            <p id="quest">would you like to see improved</p>
+            <label for="">
+                <input type="checkbox" 
+                        name=""
+                        class="checkbox"
+                        value="front-end-projects">Front-end-projects
+            </label>
+            <label for="">
+                <input type="checkbox" 
+                        name="prefer"
+                        class="checkbox"
+                        value="back-end-projects">Back-end-projects
+            </label>
+            <label for="">
+                <input type="checkbox" 
+                        name="prefer"
+                        class="checkbox"
+                        value="data-visualization">Data Visualization
+            </label>
+            <label for="">
+                <input type="checkbox" 
+                        name="prefer"
+                        class="checkbox"
+                        value="challenges">challenges
+            </label>
+            <label for="">
+                <input type="checkbox" 
+                        name="prefer"
+                        class="checkbox"
+                        value="soft-engineering">Software soft-engineering
+            </label>
+            <label for="">
+                <input type="checkbox" 
+                        name="prefer"
+                        class="checkbox"
+                        value="othet">other
+            </label>
+        </div>
+        <div class="form-group">
+            <p id="quest"> Give us your feedback</p>
+            <textarea name="feedback" 
+                        id="feedback" 
+                        cols="30" 
+                        rows="5" 
+                        class="textarea" 
+                        placeholder="Enter your feedback here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="btn">Submit</button>
+        </div>
+        
+        
+      
+    </form>
+</body>
+</html>
